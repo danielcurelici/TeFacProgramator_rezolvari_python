@@ -28,7 +28,7 @@ def check_perfect_square(x):
     global squares
     if x == int(sqrt(x)) ** 2:  #a better condition is x == int(sqrt(x) + 0.5) ** 2
         squares += 1
-    
+
 if __name__ == "__main__":
     print("Press q to quit")
     while True:

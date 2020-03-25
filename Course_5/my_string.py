@@ -1,4 +1,4 @@
-def capitalize_sentence(text):
+def capitalize_sentences(text):
     """
     This function splits a text using the "." as delimiter, strips any leading
     whitespaces and then capitalizes the first letter for each substring (the
@@ -51,7 +51,7 @@ def letter_count_dict_long(text):
             else:
                 dict[key] = 1
     return dict 
-        
+   
 if __name__ == "__main__":
     #we initialize our string with a nice roman march song
     text = "supra terram Britannorum volat aquila legionum. legio aeterna \
@@ -59,7 +59,7 @@ victrix. a ferventi aestuosa Libya volat aquila legionum supra terram \
 Britannorum."
 
     #we call the capitalization function and print the result
-    new_text = capitalize_sentence(text)
+    new_text = capitalize_sentences(text)
     print(new_text)
     
     #we call both functions for letter count and print the dictionaries for 

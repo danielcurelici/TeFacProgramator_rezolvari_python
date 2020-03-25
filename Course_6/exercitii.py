@@ -2,7 +2,7 @@ import json
 
 def read_txt_file(filename):
     """
-    This function reads a file and returns its content as a list of strings,
+    This function reads a file and returns its content as a string,
     where each element represents a line in the file.
     Parameters:
         -filename : string  => the path to the file to be read
@@ -130,7 +130,7 @@ def read_json_from_file(filename):
         data = json.load(f)
     return data
     
-def get_top_freq_words(dict, top_num):
+def get_top_least_freq_words(dict, top_num):
     """
     This function extracts from a frequency dictionary the top least frequent
     keys. First, it extracts a list of keys sorted by the values associated.
@@ -180,5 +180,5 @@ if __name__ == "__main__":
     print(json.dumps(dict, indent=4))
     
     #We create the dictionary with the least frequent 10 words
-    top_dict = get_top_freq_words(dict, 10)
+    top_dict = get_top_least_freq_words(dict, 250)
     print(json.dumps(top_dict, indent=4))
